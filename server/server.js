@@ -19,7 +19,7 @@ dotenv.config();
 
 const allowedOrigins = [
     "http://localhost:5173", // Vite default port
-    "https://modanova-client.onrender.com" // عنوان الواجهة على Render
+    "https://modanova-client.vercel.app" // عنوان الواجهة على Render
 ];
 
 
