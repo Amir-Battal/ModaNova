@@ -44,7 +44,7 @@
 
 <div align="center">
   
-  ![ModaNovaRecord](https://github.com/user-attachments/assets/f69a6eab-d7cd-4e33-8e8a-c98ad150f38a)
+  ![modaNovaRecord2](https://github.com/user-attachments/assets/a2a5c40f-88d2-4e34-9332-e1c7d093bfb1)
 </div>
 
 
