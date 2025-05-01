@@ -14,17 +14,30 @@ const storeRefreshToken = async (userId, refreshToken) => {
 };
 
 const setCookies = (res, accessToken, refreshToken) => {
+	// res.cookie("accessToken", accessToken, {
+	// 	httpOnly: true, // prevent XSS attacks, cross site scripting attack
+	// 	secure: process.env.NODE_ENV === "production",
+	// 	sameSite: "None", // prevents CSRF attack, cross-site request forgery attack
+	// 	maxAge: 15 * 60 * 1000, // 15 minutes
+	// });
+	// res.cookie("refreshToken", refreshToken, {
+	// 	httpOnly: true, // prevent XSS attacks, cross site scripting attack
+	// 	secure: process.env.NODE_ENV === "production",
+	// 	sameSite: "None", // prevents CSRF attack, cross-site request forgery attack
+	// 	maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+	// });
 	res.cookie("accessToken", accessToken, {
-		httpOnly: true, // prevent XSS attacks, cross site scripting attack
-		secure: process.env.NODE_ENV === "production",
-		sameSite: "strict", // prevents CSRF attack, cross-site request forgery attack
-		maxAge: 15 * 60 * 1000, // 15 minutes
+		httpOnly: true,
+		secure: true,              // لأنك على render (https)
+		sameSite: "None",          // ضروري للدومينات المختلفة
+		maxAge: 15 * 60 * 1000,
 	});
+	
 	res.cookie("refreshToken", refreshToken, {
-		httpOnly: true, // prevent XSS attacks, cross site scripting attack
-		secure: process.env.NODE_ENV === "production",
-		sameSite: "None", // prevents CSRF attack, cross-site request forgery attack
-		maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+		httpOnly: true,
+		secure: true,
+		sameSite: "None",
+		maxAge: 7 * 24 * 60 * 60 * 1000,
 	});
 };
 
