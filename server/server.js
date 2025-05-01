@@ -11,12 +11,24 @@ import analyticsRoutes from "./routes/analytics.route.js";
 
 import { connectDB } from "./lib/db.js";
 
+import cors from "cors";
+
 
 dotenv.config();
 
 const app = express();
 app.use(express.json({ limit: "10mb" })); // allow you to parse the body of the request
 app.use(cookieParser());
+
+const allowedOrigins = [
+    "http://localhost:5173", // Vite default port
+    "https://modanova-client.onrender.com" // عنوان الواجهة على Render
+];
+
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true,
+}));
 
 
 const PORT = process.env.PORT || 5001;
