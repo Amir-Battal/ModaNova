@@ -53,7 +53,7 @@ function App() {
           <Route path='/secret-dashboard' element={user?.role === "admin" ? <AdminPage /> : <Navigate to="/login" />} />
           <Route path='/category/:category' element= {<CategoryPage /> }/>
           <Route path='/cart' element= {user ? <CartPage /> : <Navigate to='/login' /> }/>
-          <Route path='/purchase-success' element= {user ? <PurchaseSuccessPage /> : <Navigate to='/login' /> }/>
+          <Route path='/purchase-success' element= {user ? <PurchaseSuccessPage /> : <Navigate to='/' /> }/>
           <Route path='/purchase-cancel' element= {user ? <PurchaseCancelPage /> : <Navigate to='/login' /> }/>
         </Routes>
       </div>
