@@ -131,7 +131,7 @@ You can use the project through the following link:
 
 ## License
 
-Chris Blakely [Codesistency](https://www.youtube.com/@codesistency)
+Codesistency [Codesistency](https://www.youtube.com/@codesistency)
 
 ---
 
