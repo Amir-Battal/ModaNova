@@ -37,6 +37,10 @@ const PurchaseSuccessPage = () => {
 
 	if (error) return `Error: ${error}`;
 
+	const sessionId = new URLSearchParams(window.location.search).get("session_id");
+	console.log("Session ID:", sessionId);
+
+
 	return (
 		<div className='h-screen flex items-center justify-center px-4'>
 			<Confetti
