@@ -4,7 +4,6 @@
     <img src="https://coursera-university-assets.s3.amazonaws.com/05/353594a7964fdeaff4e10615de58c0/MongoDBSquareLogo.png" alt="mongodb" width="200">
     <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/express.png" alt="express.js" width="200">
     <img src="https://blog.octo.com/pourquoi-sinteresser-a-react/image1.webp" alt="react.js" width="200">
-    <img src="https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png" alt="node.js" width="170">
   </a>
   <br>
   ModaNova E-Commerce App
